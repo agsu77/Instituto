@@ -1,0 +1,44 @@
+button{
+	margin: 10px;
+
+}
+
+ tbody img{width: 60px; 
+	height: 60px
+}
+
+#ColTable{
+	overflow:auto;
+}
+
+
+
+#sesion{
+    width: 35px;
+    height: 35px;
+}
+
+
+
+.navbar-brand img{
+    width: 60px;
+    height: 60px;
+}
+
+#section1{
+    background-color: #184999;
+}
+#section3{
+    background-color: #871427
+}
+
+.imgSection{
+    width: 100px;
+    height: 100px;
+}
+
+
+body{
+    background-image: url("bg.png");
+    background-repeat: repeat;
+}
