@@ -1,13 +1,20 @@
 $(document).ready(function () {
-
 	
 	$(".alert").hide();
 	$("table").hide();
 	cargardatos();
-
-
  });
 
+$('#enviar').click(function () {
+	
+
+	if( $("#name").val() == "" || $("#secondName").val() == "" || $("#mail").val() == ""){
+		alert('Anda');
+	}//cierro if
+	else{
+		alert("envia");
+	}
+});
 
 function cargardatos(){
 
@@ -38,8 +45,5 @@ function cargardatos(){
 				
 			}); // Cierro Ajax
 
-
-
-
-
 }
+

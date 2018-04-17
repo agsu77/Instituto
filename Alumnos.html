@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		<title>Grupo jquery-ajax</title>
+		<title>EnglishTeach</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<script type="text/javascript" src="Js/jquery-3.3.1.min.js"></script>
-		<script type="text/javascript" src="Js/script.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="Css/style.css">
 	</head>
@@ -28,7 +26,7 @@
                               <div class="navbar-nav">
                                 <a class="nav-item nav-link" href="index.html">Home</a>
                               <a class="nav-item nav-link " href="Cursos.html">Cursos</a>
-                              <a class="nav-item nav-link " href="">Contacto</a>
+                              <a class="nav-item nav-link " href="Contactos.html">Contacto</a>
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-2">
@@ -80,30 +78,30 @@
 				      <div class="modal-body">
 				        <form>
 				        	<div class="form-group">
-				        		<label>Nombre</label>
-				        		<input type="text" name="name" class="form-control" placeholder="Ingrese su nombre aquí">
+				        		<label>Nombre*</label>
+				        		<input type="text" id="name" class="form-control" placeholder="Ingrese su nombre aquí">
 				        	</div>	
 				        	<div class="form-group">
-				        		<label>Apellido</label>
-				        		<input type="text" name="secondName" class="form-control" placeholder="Ingrese su apellido aquí">				       
+				        		<label>Apellido*</label>
+				        		<input type="text" id="secondName" class="form-control" placeholder="Ingrese su apellido aquí">				       
 				        	</div>	
 				        	<div class="form-group">
 				        		<label>Edad</label>
-				        		<input type="number" name="age" min="4" max="60" class="form-control" placeholder="Ingrese su edad">				       
+				        		<input type="number" id="age" min="4" max="60" class="form-control" placeholder="Ingrese su edad">				       
 				        	</div>	
 				        	<div class="form-group">
-				        		<label>Mail</label>
-				        		<input type="text" name="mail" class="form-control" placeholder="Pepe@gmail" > 
+				        		<label>Mail*</label>
+				        		<input type="text" id="mail" class="form-control" placeholder="Pepe@gmail" > 
 				        	</div>	
 				        	<div>
 				        		<label>Foto</label>
-				        		<input type="file" name="photo" class="form-control">
+				        		<input type="file" id="photo" class="form-control">
 				        	</div>	
 				        </form>
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-outline-success">Enviar</button>
-				        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+				        <input type="submit" id="enviar" class="btn btn-outline-success">
+				        <input type="button" value="Close" class="btn btn-outline-secondary" data-dismiss="modal"> 
 				      </div>
 				    </div>
 				  </div>
@@ -157,9 +155,11 @@
         </footer>	     
 
 
-
+        	<script type="text/javascript" src="Js/jquery-3.3.1.min.js"></script>
+			<script type="text/javascript" src="Js/script.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 
 	</body>
