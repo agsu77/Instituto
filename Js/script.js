@@ -3,13 +3,15 @@ $(document).ready(function () {
 	$(".alert").hide();
 	$("table").hide();
 	cargardatos();
+
  });
 
 $('#enviar').click(function () {
 	
 
 	if( $("#name").val() == "" || $("#secondName").val() == "" || $("#mail").val() == ""){
-		alert('Anda');
+		
+		$(".alert-campos").show();
 	}//cierro if
 	else{
 		alert("envia");
