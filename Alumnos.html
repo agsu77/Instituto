@@ -1,174 +1,143 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 	<head>
 		<title>EnglishTeach</title>
 		<meta charset="utf-8">
+		<meta lang="Es">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="Css/style.css">
 	</head>
-
-
 	<body>
-        
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="row col-12">
-                <div class="col-lg-2 col-md-10">
-                    <a class="navbar-brand" href="#">EnglishTeach</a>   
-              </div>
-              <div class="col-lg-10 col-md-12">
-                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                   </button>
-                  <div class="collapse navbar-collapse row" id="navbarNavAltMarkup">
-                      
-                        <div class="col-md-12 col-lg-10">
-                              <div class="navbar-nav">
-                                <a class="nav-item nav-link" href="index.html">Home</a>
-                              <a class="nav-item nav-link " href="Cursos.html">Cursos</a>
-                              <a class="nav-item nav-link " href="Contactos.html">Contacto</a>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-2">
-                            <div class="navbar-nav ">
-                                <a class="nav-item nav-link " href="Alumnos.html"> Cerrar sesion </a>
-                            </div>
-                        </div>
-                    
-                </div>   
-              </div>
-          </div>  
-        </nav> 
-        
-            <header>
-              <div class="row">
-                  <div class="col-12">   
-                      <img src="banner.png" class="rounded mx-auto d-block img-fluid" id="banner" > 
-                  </div>    
-              </div> 
-      </header>  
-
-
-		<div class="container bg-light mt-2">
-
-		
-
+	    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	      <div class="row col-12">
+	        <div class="col-lg-2 col-md-10">
+	          <a class="navbar-brand" href="#">EnglishTeach</a>   
+	        </div>
+	        <div class="col-lg-10 col-md-12">
+	          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	            <span class="navbar-toggler-icon"></span>
+	          </button>
+	          <div class="collapse navbar-collapse row" id="navbarMenu">
+	            <div class="col-md-12 col-lg-10 navbar-nav">
+	              <a class="nav-item nav-link " href="index.html">Inicio</a>
+	              <a class="nav-item nav-link " href="Cursos.html">Cursos</a>
+	              <a class="nav-item nav-link " href="Contactos.html">Contacto</a>
+	            </div> <! Fin navbar-nav>
+	            <div class="col-md-12 col-lg-2">
+	              <div class="navbar-nav ">
+	               <a class="nav-item nav-link" href="Alumnos.html"> Cerrar Sesion </a>
+	              </div><! Fin Navbar-nav >
+	            </div>               
+	          </div> <! Fin navbarMenu >   
+	        </div>
+	      </div> <!Fin Row>  
+	    </nav>     
+	    <header>
+	      <div class="row">
+	        <div class="col-12">   
+	          <img src="Imagenes/banner.png" class="rounded mx-auto d-block img-fluid" id="banner" > 
+	        </div>    
+	       </div> 
+	    </header>  
+	    <div class="container bg-light mt-2">
 			<h1 class="text-center"> Alumnos </h1>
-
-
 			<div class="row">
-				
-			<! BOTON MODAL -->
+				<! BOTON MODAL -->
 				<div class="col-12 col-md-4">	
 					<button class="btn btn-success" data-toggle="modal" data-target="#formu" > Agregar Usuario</button>
 				</div>			
-			</div>
-
+			</div> <! Fin Row >
 			<! MODAL FORM ->
-
-				<div class="modal fade" id="formu" tabindex="-1" role="dialog" aria-labelledby="formuLabel" aria-hidden="true">
-				  <div class="modal-dialog" role="document">
+			<div class="modal fade" id="formu" tabindex="-1" role="dialog" aria-labelledby="formuLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
 				    <div class="modal-content">
-				      <div class="modal-header bg-success">
-				        <h5 class="modal-title" id="formuLabel">Agregar un usuario</h5>
-				        <button type="button" class="close btn-outline-danger" data-dismiss="modal" aria-label="close">
-				          <span aria-hidden="true">&times;</span>
-				        </button>
-				      </div>
-				      <div class="modal-body">
-				      	<! Alerta ->
-						<div class="alert-campos alert alert-danger alert-dismissible mt-2 " role="alert" > 
-							<p> Faltan completar datos obligatorios </p>
-							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-					  			<span aria-hidden="true">&times;</span>
-					   		</button>
-						</div>
-						<! Fin Alerta ->
-				       <form>
-				        	<div class="form-group">
-				        		<label>Nombre <span class="text-danger">*</span></label>
-				        		<input type="text" id="name" class="form-control" placeholder="Ingrese su nombre aquí">
-				        	</div>	
-				        	<div class="form-group">
-				        		<label>Apellido <span class="text-danger">*</span> </label>
-				        		<input type="text" id="secondName" class="form-control" placeholder="Ingrese su apellido aquí">				       
-				        	</div>	
-				        	<div class="form-group">
-				        		<label>Edad</label>
-				        		<input type="number" id="age" min="4" max="60" class="form-control" placeholder="Ingrese su edad">				       
-				        	</div>	
-				        	<div class="form-group">
-				        		<label>Mail <span class="text-danger">*</span> </label>
-				        		<input type="text" id="mail" class="form-control" placeholder="Pepe@gmail" > 
-				        	</div>	
-				        	<div>
-				        		<label>Foto</label>
-				        		<input type="file" id="photo" class="form-control">
-				        	</div>	
-				        </form>
-				      </div>
-				      <div class="modal-footer">
-				        <input type="submit" id="enviar" class="btn btn-outline-success">
-				        <input type="button" value="Close" class="btn btn-outline-secondary" data-dismiss="modal"> 
-				      </div>
-				    </div>
-				  </div>
-				</div>	
-				<! Fin Modal ->
-
+					    <div class="modal-header bg-success">
+					        <h5 class="modal-title" id="formuLabel">Agregar un usuario</h5>
+					        <button type="button" class="close btn-outline-danger" data-dismiss="modal" aria-label="close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					    </div> <!Fin Header Modal>
+					    <div class="modal-body">	
+							<div class="alert-campos alert alert-danger alert-dismissible  " role="alert" > <! Alerta ->
+								<p> Faltan completar datos obligatorios </p>
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div> <! Fin Alerta ->
+					        <form>
+					        	<div class="form-group">
+					        		<label>Nombre <span class="text-danger">*</span></label>
+					        		<input type="text" id="name" class="form-control" placeholder="Ingrese su nombre aquí">
+					        	</div>	
+					        	<div class="form-group">
+					        		<label>Apellido <span class="text-danger">*</span> </label>
+					        		<input type="text" id="secondName" class="form-control" placeholder="Ingrese su apellido aquí">	
+					        	</div>	
+					        	<div class="form-group">
+					        		<label>Edad</label>
+					        		<input type="number" id="age" min="4" max="60" class="form-control" placeholder="Ingrese su edad">				       
+					        	</div>	
+					        	<div class="form-group">
+					        		<label>Mail <span class="text-danger">*</span> </label>
+					        		<input type="text" id="mail" class="form-control" placeholder="Pepe@gmail" > 
+					        	</div>	
+					        	<div>
+					        		<label>Foto</label>
+					        		<input type="text" id="photo" class="form-control">
+					        	</div>
+					        	<small class="text-secondary">Los campos señalados con * son de caracter obligatorio</small> 
+					        </form>
+					    </div> <! Fin Modal-body >
+					    <div class="modal-footer">
+					        <button type="submit" id="enviar" class="btn btn-outline-success" >Enviar </button> 
+					        <input type="button" value="Close" class="btn btn-outline-secondary" data-dismiss="modal">
+					    </div> <! Fin modal-footer >
+					</div> <! Fin Content-modal>
+				</div> <!Fin Modal Dialog>
+			</div>	<! Fin Modal ->
 			<div class="alert alert-success alert-dismissible mt-2 " role="alert" > 
 				<p> Datos cargados exitosamente </p>
 				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 			  		<span aria-hidden="true">&times;</span>
 			   	</button>
-			</div>
-
+			</div> <!fin Alerta success tabla>
 			<div class="alert alert-danger alert-dismissible mt-2" role="alert" > 
 				<p> Error al recibir los datos </p>
 				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-			    <span aria-hidden="true">&times;</span>
+				    <span aria-hidden="true">&times;</span>
 			    </button>
-			</div>
-
+			</div> <!fin Alerta danger tabla>
 			<div class="row">
 				<div class="col-12" id="ColTable">
-						
 					<table class="table ">
 						<thead> <tr> <th scope="col"> Nombre</th> <th scope="col"> Apellido </th> <th scope="col"> Edad </th> <th scope="col"> Mail </th> <th scope="col">Foto</th> </tr> </thead>
 						<tbody id="tabla">
 						</tbody>
-
 					</table>				
-					</div>
-
-			</div>
-		</div>	
-		   <footer class="container bg-light mt-1 rounded">
+				</div> <!Fin #colTable>
+			</div> <! Fin row>
+		</div> <!Fin container>	
+		<footer class="container bg-light mt-2 rounded">
           <div class="row">
-            
             <div class="col-sm-12 col-lg-6 text-center" >
-              <p> <em> Dirección: 8 de Octubre y pando 2929.  </em> </p>
+              <p> <em> Dirección: Av.Gral.Rivera esq. Av.Italia.  </em> </p>
               <hr>    
             </div>
             <div class="col-sm-12 col-lg-6 text-center" >
-              <p> <em> Teléfono: 22902890 </em> </p>
+              <p class="align-middle"> <em> Teléfono: 22902890 </em> </p>
               <hr>
             </div>  
-               
             <div class="col-12 text-center">
-                
               <small>Derechos reservados &copy2018 by:Agsú </small>
             </div>
           </div>
-        </footer>	     
-
-
-        	<script type="text/javascript" src="Js/jquery-3.3.1.min.js"></script>
-			<script type="text/javascript" src="Js/script.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
-
+    	</footer>	     
+	    <!Scripts>
+	        	<script type="text/javascript" src="Js/jquery-3.3.1.min.js"></script>
+				<script type="text/javascript" src="Js/script.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<!Fin Scripts>
 	</body>
 </html>

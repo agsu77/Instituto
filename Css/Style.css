@@ -12,19 +12,6 @@ button{
 }
 
 
-
-#sesion{
-    width: 35px;
-    height: 35px;
-}
-
-
-
-.navbar-brand img{
-    width: 60px;
-    height: 60px;
-}
-
 #section1{
     background-color: #184999;
 }
@@ -42,3 +29,4 @@ body{
     background-image: url("bg.png");
     background-repeat: repeat;
 }
+
