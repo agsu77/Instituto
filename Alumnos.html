@@ -9,30 +9,28 @@
 		<link rel="stylesheet" type="text/css" href="Css/style.css">
 	</head>
 	<body>
-	    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-	      <div class="row col-12">
-	        <div class="col-lg-2 col-md-10">
-	          <a class="navbar-brand" href="#">EnglishTeach</a>   
-	        </div>
-	        <div class="col-lg-10 col-md-12">
-	          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-	            <span class="navbar-toggler-icon"></span>
-	          </button>
-	          <div class="collapse navbar-collapse row" id="navbarMenu">
-	            <div class="col-md-12 col-lg-10 navbar-nav">
-	              <a class="nav-item nav-link " href="index.html">Inicio</a>
-	              <a class="nav-item nav-link " href="Cursos.html">Cursos</a>
-	              <a class="nav-item nav-link " href="Contactos.html">Contacto</a>
-	            </div> <! Fin navbar-nav>
-	            <div class="col-md-12 col-lg-2">
-	              <div class="navbar-nav ">
-	               <a class="nav-item nav-link" href="Alumnos.html"> Cerrar Sesion </a>
-	              </div><! Fin Navbar-nav >
-	            </div>               
-	          </div> <! Fin navbarMenu >   
-	        </div>
-	      </div> <!Fin Row>  
-	    </nav>     
+	    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      		<div class="row col-12">
+    		    <div class="col-lg-2 col-md-10">
+   			       <a class="navbar-brand" href="index.html"> <img src="Imagenes/firma.png" > </a>    
+    		    </div>
+   		     <div class="col-lg-10 col-md-12">
+        	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    	        <span class="navbar-toggler-icon"></span>
+    	      </button>
+    	      <div class="collapse navbar-collapse row" id="navbarMenu">
+        	    <div class="col-md-12 col-lg-10 navbar-nav">
+     	         <a class="nav-item nav-link" href="index.html">Inicio</a>
+     	         <a class="nav-item nav-link " href="Cursos.html">Cursos</a>
+     	         <a class="nav-item nav-link " href="Contactos.html">Contacto</a>
+     	       </div> <! Fin navbar-nav>
+     	       <div class="col-md-12 col-lg-2 navbar-nav">  
+        	      <a class="nav-item nav-link" href="Alumnos.html"> Cerrar Sesión </a>
+       		    </div><! Fin Navbar-nav >      
+        	  </div> <! Fin navbarMenu >   
+        	 </div>
+      		</div> <!Fin Row>  
+   		</nav>
 	    <header>
 	      <div class="row">
 	        <div class="col-12">   
@@ -40,7 +38,7 @@
 	        </div>    
 	       </div> 
 	    </header>  
-	    <div class="container bg-light mt-2">
+	    <div class="container rounded bg-light mt-2">
 			<h1 class="text-center"> Alumnos </h1>
 			<div class="row">
 				<! BOTON MODAL -->
@@ -65,14 +63,20 @@
 									<span aria-hidden="true">&times;</span>
 								</button>
 							</div> <! Fin Alerta ->
+							<div class="alert-letras alert alert-warning alert-dismissible  " role="alert" > <! Alerta ->
+								<p> El nombre y apellido solo acepta numeros </p>
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div> <! Fin Alerta ->
 					        <form>
 					        	<div class="form-group">
 					        		<label>Nombre <span class="text-danger">*</span></label>
-					        		<input type="text" id="name" class="form-control" placeholder="Ingrese su nombre aquí">
+					        		<input type="text" id="name" class="form-control" autocomplete="false" placeholder="Ingrese su nombre aquí">
 					        	</div>	
 					        	<div class="form-group">
 					        		<label>Apellido <span class="text-danger">*</span> </label>
-					        		<input type="text" id="secondName" class="form-control" placeholder="Ingrese su apellido aquí">	
+					        		<input type="text" id="secondName" class="form-control" autocomplete="false" placeholder="Ingrese su apellido aquí">	
 					        	</div>	
 					        	<div class="form-group">
 					        		<label>Edad</label>
@@ -80,11 +84,11 @@
 					        	</div>	
 					        	<div class="form-group">
 					        		<label>Mail <span class="text-danger">*</span> </label>
-					        		<input type="text" id="mail" class="form-control" placeholder="Pepe@gmail" > 
+					        		<input type="text" id="mail" class="form-control" autocomplete="flase" placeholder="Pepe@gmail" > 
 					        	</div>	
 					        	<div>
 					        		<label>Foto</label>
-					        		<input type="text" id="photo" class="form-control">
+					        		<input type="url" id="photo" class="form-control" autocomplete="false" placeholder="Ingrese la URL de su foto">
 					        	</div>
 					        	<small class="text-secondary">Los campos señalados con * son de caracter obligatorio</small> 
 					        </form>
@@ -118,21 +122,23 @@
 				</div> <!Fin #colTable>
 			</div> <! Fin row>
 		</div> <!Fin container>	
-		<footer class="container bg-light mt-2 rounded">
-          <div class="row">
-            <div class="col-sm-12 col-lg-6 text-center" >
-              <p> <em> Dirección: Av.Gral.Rivera esq. Av.Italia.  </em> </p>
-              <hr>    
-            </div>
-            <div class="col-sm-12 col-lg-6 text-center" >
-              <p class="align-middle"> <em> Teléfono: 22902890 </em> </p>
-              <hr>
-            </div>  
-            <div class="col-12 text-center">
-              <small>Derechos reservados &copy2018 by:Agsú </small>
-            </div>
-          </div>
-    	</footer>	     
+	<footer class="container bg-light mt-1 rounded">
+      <div class="row">
+        <div class="col-sm-12 col-lg-6 text-center" >
+          <p> <em> Dirección: Av Italia esq. Comercio, Montevideo.  </em> </p>
+          <hr>    
+        </div>
+        <div class="col-sm-12 col-lg-6 text-center" >
+          <p> <em> Teléfono: 22902890 </em> </p>
+          <hr>
+        </div>  
+        <div class="col-12 text-center">          
+          <img src="Imagenes/firma.png" >
+          <small>Derechos reservados &copy2018 by:Agsú </small>
+        </div>
+      </div> <! Fin row>
+    </footer>
+
 	    <!Scripts>
 	        	<script type="text/javascript" src="Js/jquery-3.3.1.min.js"></script>
 				<script type="text/javascript" src="Js/script.js"></script>

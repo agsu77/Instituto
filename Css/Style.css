@@ -3,14 +3,18 @@ button{
 
 }
 
- tbody img{width: 60px; 
+tbody img{
+	width: 60px; 
 	height: 60px
+}
+
+footer img{
+	float: left;
 }
 
 #ColTable{
 	overflow:auto;
 }
-
 
 #section1{
     background-color: #184999;
@@ -29,4 +33,3 @@ body{
     background-image: url("bg.png");
     background-repeat: repeat;
 }
-

@@ -4,39 +4,25 @@ $(document).ready(function () {
 	$("table").hide();
 	cargardatos();
 
-
  }); //fin document ready
 
 var alumnos=[];
 
-function Persona(nom,ape,age,email,photo) { //CREO CLASE
+function Persona(nom,ape,age,mail,photo) { //CREO CLASE
 	this.nombre=nom;
 	this.apellido=ape;
 	this.edad=age;
-	this.mail=email;
+	this.email=mail;
 	this.foto=photo;
 }
 
-
-
-$("#enviar").click(function () { 
+$("#enviar").click(function () { //Boton enviar
 	
 	if( ($("#name").val().trim() == "") || ($("#secondName").val().trim() == "") || ($("#mail").val().trim() == "") ){
 		$(".alert-campos").show();
 	}//fin if
 	else{
-		var inputNom= $("#name").val() ;
-		var inputApe= $("#secondName").val() ;
-		var inputAge= $("#age").val() ;
-		var inputMail= $("#mail").val() ;
-		var inputFoto= $("#photo").val() ;
-		var persona1 = new Persona(inputNom,inputApe,inputAge,inputMail,inputFoto);
-		alumnos.push(persona1);
-		crearTabla();
-		alert( persona1.mail);
-		var datos= JSON.stringify(alumnos);
-		alert(datos);
-		inputVacio();
+		inputvalid();
 	} //fin else
 
 }); //Fin boton enviar
@@ -71,5 +57,23 @@ function inputVacio() {
 	$("#secondName").val("");
 	$("#age").val("");
 	$("#mail").val("");
-	$("#photo").text("");
-}
+	$("#photo").val("");
+} //Fin inputVacio
+
+function inputvalid() {
+	if ( /^[a-z][a-z]*/.test($("#name").val()) && /^[a-z][a-z]*/.test($("#secondName").val()) ) {
+		var inputNom= $("#name").val() ;
+		var inputApe= $("#secondName").val() ;
+		var inputAge= $("#age").val() ;
+		var inputMail= $("#mail").val() ;
+		var inputFoto= $("#photo").val() ;
+		var persona1 = new Persona(inputNom,inputApe,inputAge,inputMail,inputFoto);
+		alumnos.push(persona1);
+		crearTabla();
+		$("#formu").modal("hide");
+		inputVacio();
+	}
+	else{
+		$(".alert-letras").show();
+	}
+} //fin inputvalid
