@@ -34,7 +34,6 @@ function cargardatos(){
 		success: function (data) { //Funcion exitosa ajax			
 			 alumnos = JSON.parse(data);
 			crearTabla();	 	
-			$("table").show();
 			$(".alert-success").show();
 		 }, //Success
 		error: function(){ //Funcion error de ajax
@@ -49,6 +48,8 @@ function crearTabla() {
  	for(var i=0;i<alumnos.length;i ++){
  		$("#tabla").append( " <tr> <td> "+ alumnos[i].nombre +" </td>  <td> "+ alumnos[i].apellido +" </td>  <td> "+
 		 alumnos[i].edad +" </td> <td> "+ alumnos[i].email +" </td> <td>  <img src=" + alumnos[i].foto +"> </td>  </tr>  " );
+ 			$("table").show();
+		
 	}//fin for
 } //Fin crearTabla
 

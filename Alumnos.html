@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="Css/style.css">
+		<link rel="shortcut icon" href="Imagenes/UkUsa.png">
 	</head>
 	<body>
 	    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
@@ -31,15 +32,9 @@
         	 </div>
       		</div> <!Fin Row>  
    		</nav>
-	    <header>
-	      <div class="row">
-	        <div class="col-12">   
-	          <img src="Imagenes/banner.png" class="rounded mx-auto d-block img-fluid" id="banner" > 
-	        </div>    
-	       </div> 
-	    </header>  
+	     
 	    <div class="container rounded bg-light mt-2">
-			<h1 class="text-center"> Alumnos </h1>
+			<h1 class="text-center text-info"> Alumnos </h1>
 			<div class="row">
 				<! BOTON MODAL -->
 				<div class="col-12 col-md-4">	
@@ -56,7 +51,7 @@
 					          <span aria-hidden="true">&times;</span>
 					        </button>
 					    </div> <!Fin Header Modal>
-					    <div class="modal-body">	
+					    <div class="modal-body">	<! Modal Body >
 							<div class="alert-campos alert alert-danger alert-dismissible  " role="alert" > <! Alerta ->
 								<p> Faltan completar datos obligatorios </p>
 								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -71,23 +66,23 @@
 							</div> <! Fin Alerta ->
 					        <form>
 					        	<div class="form-group">
-					        		<label>Nombre <span class="text-danger">*</span></label>
+					        		<label for="name">Nombre <span class="text-danger">*</span></label>
 					        		<input type="text" id="name" class="form-control" autocomplete="false" placeholder="Ingrese su nombre aquí">
 					        	</div>	
 					        	<div class="form-group">
-					        		<label>Apellido <span class="text-danger">*</span> </label>
+					        		<label for="secondName">Apellido <span class="text-danger">*</span> </label>
 					        		<input type="text" id="secondName" class="form-control" autocomplete="false" placeholder="Ingrese su apellido aquí">	
 					        	</div>	
 					        	<div class="form-group">
-					        		<label>Edad</label>
+					        		<label for="age">Edad</label>
 					        		<input type="number" id="age" min="4" max="60" class="form-control" placeholder="Ingrese su edad">				       
 					        	</div>	
 					        	<div class="form-group">
-					        		<label>Mail <span class="text-danger">*</span> </label>
+					        		<label for="mail">Mail <span class="text-danger">*</span> </label>
 					        		<input type="text" id="mail" class="form-control" autocomplete="flase" placeholder="Pepe@gmail" > 
 					        	</div>	
 					        	<div>
-					        		<label>Foto</label>
+					        		<label for="photo">Foto</label>
 					        		<input type="url" id="photo" class="form-control" autocomplete="false" placeholder="Ingrese la URL de su foto">
 					        	</div>
 					        	<small class="text-secondary">Los campos señalados con * son de caracter obligatorio</small> 
